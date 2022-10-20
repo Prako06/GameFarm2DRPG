@@ -29,6 +29,9 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isWateringToolLeft;
     private bool isWateringToolUp;
     private bool isWateringToolDown;
+
+    private Camera mainCamera;
+
     private ToolEffect toolEffect = ToolEffect.none;
 
     private Rigidbody2D rigidbody2D;
@@ -46,6 +49,8 @@ public class Player : SingletonMonobehaviour<Player>
         base.Awake();
 
         rigidbody2D = GetComponent<Rigidbody2D>();
+
+        mainCamera = Camera.main;
     }
 
     private void Update() 
@@ -127,5 +132,10 @@ public class Player : SingletonMonobehaviour<Player>
             isWalking = false;
             isIdle = true;
         }
+    }
+
+    public Vector3 GetPlayerViewportPosition()
+    {
+        return mainCamera.WorldToViewportPoint(transform.position);
     }
 }
