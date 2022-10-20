@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31dddb2c003bd814c9d3a02d004faf16, type: 3}
+  m_Name: so_ItemList
+  m_EditorClassIdentifier: 
+  itemDetails:
+  - itemCode: 10000
+    itemType: 0
+    itemDescription: Carrot Seed
+    itemSprite: {fileID: -91329334, guid: 128811a1ac4b4164097cf8a392e49049, type: 3}
+    itemLongDescription: From small carrot seeds do large carrot grow
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10001
+    itemType: 1
+    itemDescription: Carrot
+    itemSprite: {fileID: 524864560, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10002
+    itemType: 1
+    itemDescription: Pumpkin
+    itemSprite: {fileID: 62186492, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
+    itemLongDescription: Juicy
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10003
+    itemType: 1
+    itemDescription: Corn
+    itemSprite: {fileID: -1957443895, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
+    itemLongDescription: Fresh corn
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10004
+    itemType: 2
+    itemDescription: ' A Basic Watering Can'
+    itemSprite: {fileID: 131478652, guid: 81d1d10b781b09941bf3e30476663a93, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10005
+    itemType: 3
+    itemDescription: A Basic Hoe
+    itemSprite: {fileID: -1674790388, guid: fadba1335f5c146498ea5691f6d9b844, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10006
+    itemType: 4
+    itemDescription: A Basic Axe
+    itemSprite: {fileID: -1657598956, guid: 801e131a8da3a63458a985ac8006514f, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10007
+    itemType: 0
+    itemDescription: Pumpkin Seed
+    itemSprite: {fileID: 863247346, guid: 128811a1ac4b4164097cf8a392e49049, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10008
+    itemType: 0
+    itemDescription: Corn Seed
+    itemSprite: {fileID: 36363095, guid: 128811a1ac4b4164097cf8a392e49049, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10009
+    itemType: 1
+    itemDescription: Wood
+    itemSprite: {fileID: -474372596, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10010
+    itemType: 5
+    itemDescription: A Basic PickAxe
+    itemSprite: {fileID: -1025784711, guid: f00f16b468920254d9729e331762740a, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10011
+    itemType: 7
+    itemDescription: A Basic PickUp
+    itemSprite: {fileID: 0}
+    itemLongDescription: 
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
