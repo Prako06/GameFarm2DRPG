@@ -4687,8 +4687,8 @@ TextureImporter:
         serializedVersion: 2
         x: 160
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4717,7 +4717,7 @@ TextureImporter:
       char1_126: -1113686976
       char1_29: 178851720
       char1_108: 438678551
-      char1_178: -153282737
+      char1_164: -31784579
       char1_60: -1180694323
       char1_147: 689014526
       char1_50: -1279971763
@@ -4931,7 +4931,7 @@ TextureImporter:
       char1_215: -1388292848
       char1_83: 364412820
       char1_190: -1203957141
-      char1_164: -31784579
+      char1_178: -153282737
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
