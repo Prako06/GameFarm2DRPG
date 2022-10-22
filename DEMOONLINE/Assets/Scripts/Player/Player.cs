@@ -42,9 +42,9 @@ public class Player : SingletonMonobehaviour<Player>
 
     private bool _playerInputIsDisable = false;
 
-    public bool PlayerInputIsDisable { get => _playerInputIsDisable; set => _playerInputIsDisable = value;}
+    public bool PlayerInputIsDisable { get => _playerInputIsDisable; set => _playerInputIsDisable = value; }
 
-    protected override void Awake() 
+    protected override void Awake()
     {
         base.Awake();
 
@@ -53,26 +53,29 @@ public class Player : SingletonMonobehaviour<Player>
         mainCamera = Camera.main;
     }
 
-    private void Update() 
+    private void Update()
     {
         #region Player Input
 
-        ResetAnimationTriggers();
+        if (!PlayerInputIsDisable)
+        {
+            ResetAnimationTriggers();
 
-        PlayerMovementInput();
+            PlayerMovementInput();
 
-        EventHandler.CallMovementEvent(xInput, yInput, isWalking, isIdle, toolEffect, 
-        isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown, 
-        isAxingToolRight, isAxingToolLeft, isAxingToolUp, isAxingToolDown,
-        isPickAxingToolRight, isPickAxingToolLeft, isPickAxingToolUp, isPickAxingToolDown,
-        isPickingUpRight, isPickingUpLeft, isPickingUpUp, isPickingUpDown,
-        isWateringToolRight, isWateringToolLeft, isWateringToolUp, isWateringToolDown,
-        false,false,false,false);
+            EventHandler.CallMovementEvent(xInput, yInput, isWalking, isIdle, toolEffect,
+            isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+            isAxingToolRight, isAxingToolLeft, isAxingToolUp, isAxingToolDown,
+            isPickAxingToolRight, isPickAxingToolLeft, isPickAxingToolUp, isPickAxingToolDown,
+            isPickingUpRight, isPickingUpLeft, isPickingUpUp, isPickingUpDown,
+            isWateringToolRight, isWateringToolLeft, isWateringToolUp, isWateringToolDown,
+            false, false, false, false);
+        }
 
-        #endregion
+        #endregion Player Input
     }
 
-    private void FixedUpdate() 
+    private void FixedUpdate()
     {
         PlayerMovement();
     }
@@ -107,7 +110,7 @@ public class Player : SingletonMonobehaviour<Player>
         {
             isWalking = true;
             isIdle = false;
-            movementSpeed = Settings.walkingSpeed; 
+            movementSpeed = Settings.walkingSpeed;
 
             if (xInput < 0)
             {
@@ -132,6 +135,38 @@ public class Player : SingletonMonobehaviour<Player>
             isWalking = false;
             isIdle = true;
         }
+    }
+
+    private void ResetMovement()
+    {
+        xInput = 0f;
+        yInput = 0f;
+        isWalking = false;
+        isIdle = true;
+    }
+
+    public void DisablePlayerInputAndResetMovement()
+    {
+        DisablePlayerInput();
+        ResetMovement();
+
+        EventHandler.CallMovementEvent(xInput, yInput, isWalking, isIdle, toolEffect,
+            isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+            isAxingToolRight, isAxingToolLeft, isAxingToolUp, isAxingToolDown,
+            isPickAxingToolRight, isPickAxingToolLeft, isPickAxingToolUp, isPickAxingToolDown,
+            isPickingUpRight, isPickingUpLeft, isPickingUpUp, isPickingUpDown,
+            isWateringToolRight, isWateringToolLeft, isWateringToolUp, isWateringToolDown,
+            false, false, false, false);
+    }
+
+    public void DisablePlayerInput()
+    {
+        PlayerInputIsDisable = true;
+    }
+
+    public void EnablePlayerInput()
+    {
+        PlayerInputIsDisable = false;
     }
 
     public Vector3 GetPlayerViewportPosition()
