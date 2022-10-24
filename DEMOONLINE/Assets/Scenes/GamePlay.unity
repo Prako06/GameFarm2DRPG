@@ -282,9 +282,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -435,9 +443,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -556,9 +572,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -682,9 +706,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -1231,6 +1263,7 @@ MonoBehaviour:
   - {fileID: 245948822}
   - {fileID: 1921262106}
   inventoryBarDraggedItem: {fileID: 5644577030458923722, guid: 1669a4be3b2b73748bb3a761e5d9ee0f, type: 3}
+  inventoryTextBoxGameobject: {fileID: 0}
 --- !u!1 &1067367703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,9 +1858,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -1946,9 +1987,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -2067,9 +2116,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -2352,9 +2409,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 983187028}
     m_Modifications:
     - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: slotNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -2635,6 +2700,10 @@ PrefabInstance:
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 983187031}
+    - target: {fileID: 2635282006363716960, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
+      propertyPath: inventoryTextBoxPrefab
+      value: 
+      objectReference: {fileID: 3720496581319248404, guid: 5d8c8a954fcab994180e6fa1a037e42e, type: 3}
     - target: {fileID: 6271719865598629583, guid: d9312e373093fcb4aaf05ce9476049e7, type: 3}
       propertyPath: m_Color.a
       value: 0

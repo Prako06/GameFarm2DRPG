@@ -29,7 +29,8 @@ MonoBehaviour:
     itemType: 1
     itemDescription: Carrot
     itemSprite: {fileID: 524864560, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
-    itemLongDescription: 
+    itemLongDescription: "\u0111\xE2y l\xE0 c\xE0 r\u1ED1t r\u1EA5t th\u01A1m ngon
+      :3"
     itemUseGridRadius: 2
     itemUseRadius: 0
     isStartingItem: 0
@@ -41,7 +42,8 @@ MonoBehaviour:
     itemType: 1
     itemDescription: Pumpkin
     itemSprite: {fileID: 62186492, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
-    itemLongDescription: Juicy
+    itemLongDescription: "\u0111\u1ED3 \u0103n b\u1ED5 d\u01B0\u1EE1ng cho s\u1EE9c
+      kh\u1ECFe"
     itemUseGridRadius: 2
     itemUseRadius: 0
     isStartingItem: 0
