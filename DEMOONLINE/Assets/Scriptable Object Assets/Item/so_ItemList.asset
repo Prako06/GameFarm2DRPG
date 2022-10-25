@@ -17,7 +17,7 @@ MonoBehaviour:
     itemType: 0
     itemDescription: Carrot Seed
     itemSprite: {fileID: -91329334, guid: 128811a1ac4b4164097cf8a392e49049, type: 3}
-    itemLongDescription: From small carrot seeds do large carrot grow
+    itemLongDescription: "\u0110\xE2y l\xE0 h\u1EA1t gi\u1ED1ng c\xE0 r\u1ED1t"
     itemUseGridRadius: 2
     itemUseRadius: 0
     isStartingItem: 0
@@ -66,8 +66,8 @@ MonoBehaviour:
   - itemCode: 10004
     itemType: 2
     itemDescription: ' A Basic Watering Can'
-    itemSprite: {fileID: 131478652, guid: 81d1d10b781b09941bf3e30476663a93, type: 3}
-    itemLongDescription: 
+    itemSprite: {fileID: 1627416890, guid: 81d1d10b781b09941bf3e30476663a93, type: 3}
+    itemLongDescription: "\u0110\xE2y l\xE0 b\xECnh t\u01B0\u1EDBi n\u01B0\u1EDBc"
     itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
@@ -78,8 +78,8 @@ MonoBehaviour:
   - itemCode: 10005
     itemType: 3
     itemDescription: A Basic Hoe
-    itemSprite: {fileID: -1674790388, guid: fadba1335f5c146498ea5691f6d9b844, type: 3}
-    itemLongDescription: 
+    itemSprite: {fileID: 21300000, guid: 4da6baff6e194274a9dd2aa8f5620864, type: 3}
+    itemLongDescription: "\u0110\xE2y l\xE0 c\xE1i cu\u1ED1c"
     itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
@@ -90,8 +90,8 @@ MonoBehaviour:
   - itemCode: 10006
     itemType: 4
     itemDescription: A Basic Axe
-    itemSprite: {fileID: -1657598956, guid: 801e131a8da3a63458a985ac8006514f, type: 3}
-    itemLongDescription: 
+    itemSprite: {fileID: 21300000, guid: 9a21654584b8b744cb372af250414677, type: 3}
+    itemLongDescription: "\u0110\xE2y l\xE0 c\xE2y r\xECu"
     itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
@@ -103,7 +103,7 @@ MonoBehaviour:
     itemType: 0
     itemDescription: Pumpkin Seed
     itemSprite: {fileID: 863247346, guid: 128811a1ac4b4164097cf8a392e49049, type: 3}
-    itemLongDescription: 
+    itemLongDescription: "\u0110\xE2y l\xE0 h\u1EA1t gi\u1ED1ng b\xED ng\xF4"
     itemUseGridRadius: 2
     itemUseRadius: 0
     isStartingItem: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
     itemType: 0
     itemDescription: Corn Seed
     itemSprite: {fileID: 36363095, guid: 128811a1ac4b4164097cf8a392e49049, type: 3}
-    itemLongDescription: 
+    itemLongDescription: "\u0110\xE2y l\xE0 h\u1EA1t gi\u1ED1ng b\u1EAFp"
     itemUseGridRadius: 2
     itemUseRadius: 0
     isStartingItem: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
     itemType: 1
     itemDescription: Wood
     itemSprite: {fileID: -474372596, guid: bc633c045a1a0f541b0183eb6a696f82, type: 3}
-    itemLongDescription: 
+    itemLongDescription: "\u0110\xE2y l\xE0 kh\xFAc g\u1ED7"
     itemUseGridRadius: 2
     itemUseRadius: 0
     isStartingItem: 0
@@ -138,8 +138,8 @@ MonoBehaviour:
   - itemCode: 10010
     itemType: 5
     itemDescription: A Basic PickAxe
-    itemSprite: {fileID: -1025784711, guid: f00f16b468920254d9729e331762740a, type: 3}
-    itemLongDescription: 
+    itemSprite: {fileID: 908836692, guid: 3d9b240f6b77e6b4198eecd130b604db, type: 3}
+    itemLongDescription: "\u0110\xE2y l\xE0 c\xE1i c\xE2y cu\u1ED1c"
     itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
@@ -149,9 +149,10 @@ MonoBehaviour:
     canBeCarried: 0
   - itemCode: 10011
     itemType: 7
-    itemDescription: A Basic PickUp
-    itemSprite: {fileID: 0}
-    itemLongDescription: 
+    itemDescription: Wicker Basket
+    itemSprite: {fileID: 21300000, guid: 21dff3a1eafff6341b045912c8714a70, type: 3}
+    itemLongDescription: "\u0110\xE2y l\xE0 gi\u1ECF \u0111\u1EC3 nh\u1EB7t \u0111\u1ED3
+      v\u1EADt"
     itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
