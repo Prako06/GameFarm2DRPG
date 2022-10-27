@@ -1,8 +1,9 @@
-
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : SingletonMonobehaviour<Player>
 {
+    private AnimationOverrides animationOverrides;
     // Movement Parameters
     private float xInput;
     private float yInput;
@@ -38,7 +39,17 @@ public class Player : SingletonMonobehaviour<Player>
 
     private Direction playerDirection;
 
+    private List<CharacterAttribute> characterAttributeCustomisationList;
     private float movementSpeed;
+
+    [Tooltip("Should be populated in the prefab with the equipped item sprite renderer")]
+    [SerializeField] private SpriteRenderer equippedItemSpriteRenderer = null;
+
+    // Player attributes that can be swapped
+    private CharacterAttribute bodyCharacterAttribute;
+    private CharacterAttribute hairCharacterAttribute;
+    private CharacterAttribute clothesCharacterAttribute;
+    private CharacterAttribute toolCharacterAttribute;
 
     private bool _playerInputIsDisable = false;
 
@@ -49,6 +60,16 @@ public class Player : SingletonMonobehaviour<Player>
         base.Awake();
 
         rigidbody2D = GetComponent<Rigidbody2D>();
+
+        animationOverrides = GetComponentInChildren<AnimationOverrides>();
+
+        // Initialise swappable character attributes
+        bodyCharacterAttribute = new CharacterAttribute(CharacterPartAnimator.Body, PartVariantColour.none, PartVariantType.none);
+        hairCharacterAttribute = new CharacterAttribute(CharacterPartAnimator.Hair, PartVariantColour.none, PartVariantType.none);
+        clothesCharacterAttribute = new CharacterAttribute(CharacterPartAnimator.Clothes, PartVariantColour.none, PartVariantType.none);
+
+        // Initialise character attribute list
+        characterAttributeCustomisationList = new List<CharacterAttribute>();
 
         mainCamera = Camera.main;
     }
@@ -167,6 +188,62 @@ public class Player : SingletonMonobehaviour<Player>
     public void EnablePlayerInput()
     {
         PlayerInputIsDisable = false;
+    }
+
+    public void ClearCarriedItem()
+    {
+        equippedItemSpriteRenderer.sprite = null;
+        equippedItemSpriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+
+        // Apply base character body customisation
+        bodyCharacterAttribute.partVariantType = PartVariantType.none;
+        characterAttributeCustomisationList.Clear();
+        characterAttributeCustomisationList.Add(bodyCharacterAttribute);
+        animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+        // Apply base character hair customisation
+        hairCharacterAttribute.partVariantType = PartVariantType.none;
+        characterAttributeCustomisationList.Clear();
+        characterAttributeCustomisationList.Add(hairCharacterAttribute);
+        animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+        // Apply base character clothes customisation
+        clothesCharacterAttribute.partVariantType = PartVariantType.none;
+        characterAttributeCustomisationList.Clear();
+        characterAttributeCustomisationList.Add(clothesCharacterAttribute);
+        animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+        isCarrying = false;
+    }
+
+    public void ShowCarriedItem(int itemCode)
+    {
+        ItemDetails itemDetails = InventoryManager.Instance.GetItemDetails(itemCode);
+        if (itemDetails != null)
+        {
+            equippedItemSpriteRenderer.sprite = itemDetails.itemSprite;
+            equippedItemSpriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+
+            // Apply 'carry' character body customisation
+            bodyCharacterAttribute.partVariantType = PartVariantType.carry;
+            characterAttributeCustomisationList.Clear();
+            characterAttributeCustomisationList.Add(bodyCharacterAttribute);
+            animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+            // Apply 'carry' character hair customisation
+            hairCharacterAttribute.partVariantType = PartVariantType.carry;
+            characterAttributeCustomisationList.Clear();
+            characterAttributeCustomisationList.Add(hairCharacterAttribute);
+            animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+            // Apply 'carry' character clothes customisation
+            clothesCharacterAttribute.partVariantType = PartVariantType.carry;
+            characterAttributeCustomisationList.Clear();
+            characterAttributeCustomisationList.Add(clothesCharacterAttribute);
+            animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+            isCarrying = true;
+        }
     }
 
     public Vector3 GetPlayerViewportPosition()

@@ -4,6 +4,7 @@ using UnityEngine;
 public class InventoryManager : SingletonMonobehaviour<InventoryManager>
 {
     private Dictionary<int, ItemDetails> itemDetailsDictionary;
+    private int[] selectedInventoryItem;
 
     public List<InventoryItem>[] inventoryLists;
 
@@ -18,6 +19,13 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         CreateInventoryLists();
 
         CreateItemDetailsDictionary();
+
+        selectedInventoryItem = new int[(int)InventoryLocation.count];
+
+        for (int i = 0; i < selectedInventoryItem.Length; i++)
+        {
+            selectedInventoryItem[i] = -1;
+        }
     }
 
     private void CreateInventoryLists()
@@ -93,6 +101,26 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         //DebugPrintInventoryList(inventoryList);
     }
 
+    public void SwapInventoryItems(InventoryLocation inventoryLocation, int fromItem, int toItem)
+    {
+        if (fromItem < inventoryLists[(int)inventoryLocation].Count && toItem < inventoryLists[(int)inventoryLocation].Count
+            && fromItem != toItem && fromItem >= 0 && toItem >= 0)
+        {
+            InventoryItem fromInventoryItem = inventoryLists[(int)inventoryLocation][fromItem];
+            InventoryItem toInventoryItem = inventoryLists[(int)inventoryLocation][toItem];
+
+            inventoryLists[(int)inventoryLocation][toItem] = fromInventoryItem;
+            inventoryLists[(int)inventoryLocation][fromItem] = toInventoryItem;
+
+            EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
+        }
+    }
+
+    public void ClearSelectedInventoryItem(InventoryLocation inventoryLocation)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = -1;
+    }
+
     public int FindItemInInventory(InventoryLocation inventoryLocation, int itemCode)
     {
         List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
@@ -108,20 +136,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         return -1;
     }
 
-    public void SwapInventoryItems(InventoryLocation inventoryLocation, int fromItem, int toItem)
-    {
-        if (fromItem < inventoryLists[(int)inventoryLocation].Count && toItem < inventoryLists[(int)inventoryLocation].Count
-            && fromItem != toItem && fromItem >= 0 && toItem >= 0)
-        {
-            InventoryItem fromInventoryItem = inventoryLists[(int)inventoryLocation][fromItem];
-            InventoryItem toInventoryItem = inventoryLists[(int)inventoryLocation][toItem];
-
-            inventoryLists[(int)inventoryLocation][toItem] = fromInventoryItem;
-            inventoryLists[(int)inventoryLocation][fromItem] = toInventoryItem;
-
-            EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
-        }
-    }
 
     public ItemDetails GetItemDetails(int itemCode)
     {
@@ -200,6 +214,11 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         {
             inventoryList.RemoveAt(position);
         }
+    }
+
+    public void SetSelectedInventoryItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = itemCode;
     }
 
     /*private void DebugPrintInventoryList(List<InventoryItem> inventoryList)
