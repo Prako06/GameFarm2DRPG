@@ -40,6 +40,8 @@ public enum CharacterPartAnimator
     count
 }
 
+
+
 public enum PartVariantColour
 {
     none,
@@ -61,6 +63,16 @@ public enum InventoryLocation
 {
     player,
     chest,
+    count
+}
+
+public enum Season
+{
+    Spring,
+    Summer,
+    Autum,
+    Winter,
+    none,
     count
 }
 

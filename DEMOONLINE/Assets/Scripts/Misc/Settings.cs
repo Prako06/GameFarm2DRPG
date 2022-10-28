@@ -51,6 +51,9 @@ public class Settings
     public const string WateringTool = "Watering Can";
     public const string CollectingTool = "PickUp";
 
+    // Time System
+    public const float secondsPerGameSecond = 0.012f;
+
     //Static constructor
     static Settings()
     {

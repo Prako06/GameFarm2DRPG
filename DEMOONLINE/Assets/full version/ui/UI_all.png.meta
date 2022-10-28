@@ -217,7 +217,7 @@ TextureImporter:
         width: 206
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,6 +225,27 @@ TextureImporter:
       bones: []
       spriteID: 4ead94e256e3e124a8a5d5fa5afc2cde
       internalID: 81708782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameClock
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 195
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ff3098756416743ac6cb87e87ecdea
+      internalID: 1550363613
       vertices: []
       indices: 
       edges: []
@@ -244,6 +265,7 @@ TextureImporter:
       UI_all_2: 485041765
       UI_all_3: -1608274277
       InventoryBar: 81708782
+      GameClock: 1550363613
       UI_all_0: 1766552656
       UI_all_1: -939602175
   spritePackingTag: 

@@ -320,6 +320,7 @@ MonoBehaviour:
   textMeshProUGUI: {fileID: 6271719866431659280}
   inventoryBar: {fileID: 0}
   inventoryTextBoxPrefab: {fileID: 0}
+  isSelected: 0
   itemDetails:
     itemCode: 0
     itemType: 0

@@ -84,6 +84,8 @@ public class Player : SingletonMonobehaviour<Player>
 
             PlayerMovementInput();
 
+            PlayerTestInput();
+
             EventHandler.CallMovementEvent(xInput, yInput, isWalking, isIdle, toolEffect,
             isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
             isAxingToolRight, isAxingToolLeft, isAxingToolUp, isAxingToolDown,
@@ -157,6 +159,23 @@ public class Player : SingletonMonobehaviour<Player>
             isIdle = true;
         }
     }
+
+
+    private void PlayerTestInput()
+    {
+        // Trigger Advance Time
+        if (Input.GetKey(KeyCode.T))
+        {
+            TimeManager.Instance.TestAdvanceGameMinute();
+        }
+
+        // Trigger Advance Day
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            TimeManager.Instance.TestAdvanceGameDay();
+        }
+    }
+
 
     private void ResetMovement()
     {
