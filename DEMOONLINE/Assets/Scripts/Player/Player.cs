@@ -174,6 +174,12 @@ public class Player : SingletonMonobehaviour<Player>
         {
             TimeManager.Instance.TestAdvanceGameDay();
         }
+
+        // Test scene unload / load
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SceneControllerManager.Instance.FadeAndLoadScene(SceneName.GamePlay1_Farm.ToString(), transform.position);
+        }
     }
 
 

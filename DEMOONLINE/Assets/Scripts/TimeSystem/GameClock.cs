@@ -52,7 +52,7 @@ public class GameClock : MonoBehaviour
             minute = gameMinute.ToString();
         }
 
-        string time ="  " + gameHour.ToString() + "      " + minute + ampm;
+        string time =" " + gameHour.ToString() + "      " + minute + ampm;
 
         timeText.SetText(time);
         dateText.SetText( "    " + gameDayOfWeek + "       " + gameDay.ToString());
