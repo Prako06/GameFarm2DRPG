@@ -68458,6 +68458,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ddcc44001b3e6d42b5dbdb92430a958, type: 3}
+--- !u!1001 &1805077991
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 526199796594111492, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 526199796594111492, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3456137112389264347, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: sceneNameGoto
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3456137112389264347, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: scenePositionGoto.x
+      value: -5.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3456137112389264347, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: scenePositionGoto.y
+      value: 2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047436487519856706, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081961033588513482, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
+      propertyPath: m_Name
+      value: SceneTeleport To Inside Cabin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
 --- !u!1001 &1809881464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72958,7 +73035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8081961033588513482, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
       propertyPath: m_Name
-      value: SceneTeleport
+      value: SceneTeleport To Field
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ca9afb3e927e343b7a478131d49585, type: 3}
