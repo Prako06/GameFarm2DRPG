@@ -11,6 +11,17 @@ bool idleRight, bool idleLeft, bool idleUp, bool idleDown);
 
 public static class EventHandler
 {
+    //Drop selected item event
+    public static event Action DropSelectedItemEvent;
+
+    public static void CallDropSelectedItemEvent()
+    {
+        if (DropSelectedItemEvent != null)
+        {
+            DropSelectedItemEvent();
+        }
+    }
+
     // Inventory Updated Event
     public static event Action<InventoryLocation, List<InventoryItem>> InventoryUpdatedEvent;
 

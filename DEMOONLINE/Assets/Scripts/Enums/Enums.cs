@@ -59,6 +59,15 @@ public enum PartVariantType
     count
 }
 
+public enum GridBoolProperty
+{
+    digable,
+    canDropItem,
+    canPlaceFurniture,
+    isPath,
+    isNPCObstacle
+}
+
 public enum InventoryLocation
 {
     player,
