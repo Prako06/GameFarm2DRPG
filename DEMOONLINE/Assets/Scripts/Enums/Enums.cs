@@ -92,6 +92,16 @@ public enum Season
     count
 }
 
+public enum HarvestActionEffect
+{
+    deciduosLeavesFalling,
+    pineConesFalling,
+    choppingTreeTrunk,
+    breakingStone,
+    reaping,
+    none
+}
+
 public enum ToolEffect
 {
     none,

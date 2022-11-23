@@ -22,6 +22,17 @@ public static class EventHandler
         }
     }
 
+    // Remove selected item from inventory
+    public static event Action RemoveSelectedItemFromInventoryEvent;
+
+    public static void CallRemoveSelectedItemFromInventoryEvent()
+    {
+        if (RemoveSelectedItemFromInventoryEvent != null)
+        {
+            RemoveSelectedItemFromInventoryEvent();
+        }
+    }
+
     // Inventory Updated Event
     public static event Action<InventoryLocation, List<InventoryItem>> InventoryUpdatedEvent;
 

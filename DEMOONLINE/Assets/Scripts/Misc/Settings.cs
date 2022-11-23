@@ -14,7 +14,11 @@ public class Settings
     // Player Movement
     public const float walkingSpeed = 3.666f;
     public static float useToolAnimationPause = 0.25f;
+    public static float liftToolAnimationPause = 0.4f;
+    public static float pickAnimationPause = 1f;
     public static float afterUseToolAnimationPause = 0.2f;
+    public static float afterLiftToolAnimationPause = 0.4f;
+    public static float afterPickAnimationPause = 0.2f;
 
     // Inventory
     public static int playerInitialInventoryCapacity = 24;

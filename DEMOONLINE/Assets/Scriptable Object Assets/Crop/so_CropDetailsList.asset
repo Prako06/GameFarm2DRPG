@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450fd1fd8ae32564483d49b822e161e6, type: 3}
+  m_Name: so_CropDetailsList
+  m_EditorClassIdentifier: 
+  cropDetails:
+  - seedItemCode: 10000
+    growthDays: 000000000100000002000000030000000400000006000000
+    growthPrefab:
+    - {fileID: 2067233017104660276, guid: b0f4a59660c697742a0003c977d70b04, type: 3}
+    - {fileID: 2067233017104660276, guid: b0f4a59660c697742a0003c977d70b04, type: 3}
+    - {fileID: 2067233017104660276, guid: b0f4a59660c697742a0003c977d70b04, type: 3}
+    - {fileID: 2067233017104660276, guid: b0f4a59660c697742a0003c977d70b04, type: 3}
+    - {fileID: 2067233017104660276, guid: b0f4a59660c697742a0003c977d70b04, type: 3}
+    - {fileID: 2067233017104660276, guid: b0f4a59660c697742a0003c977d70b04, type: 3}
+    growthSprite:
+    - {fileID: 1321536429, guid: d8286dc67d3d70741afd5e049c9fe3f8, type: 3}
+    - {fileID: -328490998, guid: d8286dc67d3d70741afd5e049c9fe3f8, type: 3}
+    - {fileID: 16348933, guid: d8286dc67d3d70741afd5e049c9fe3f8, type: 3}
+    - {fileID: -1012282583, guid: d8286dc67d3d70741afd5e049c9fe3f8, type: 3}
+    - {fileID: 2117875811, guid: d8286dc67d3d70741afd5e049c9fe3f8, type: 3}
+    - {fileID: -1361664360, guid: d8286dc67d3d70741afd5e049c9fe3f8, type: 3}
+    seasons: 0000000001000000
+    harvestedSprite: {fileID: -1832141906, guid: 3f0ed26186e8aef4e86b79c39f8678d4, type: 3}
+    harvestedTransformItemcode: 0
+    hideCropBeforeHarvestedAnimation: 1
+    disableCropCollidersBeforeHarvestedAnimation: 0
+    isHarvestedAnimation: 1
+    isHarvestActionEffect: 0
+    spawnCropProducedAtPlayerPosition: 1
+    harvestActionEffect: 5
+    harvestToolItemcode: 1b270000
+    requiredHarvestActions: 01000000
+    cropProducedItemcode: 11270000
+    cropProducedMinQuantity: 01000000
+    cropProducedMaxQuantity: 01000000
+    daysToRegrow: 0

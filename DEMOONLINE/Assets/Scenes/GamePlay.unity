@@ -1202,6 +1202,7 @@ MonoBehaviour:
   cursorRectTransform: {fileID: 773728631}
   greenCursorSprite: {fileID: 21300000, guid: 00ea5a95cd593fd448a1298fc9727667, type: 3}
   redCursorSprite: {fileID: 21300000, guid: 141c4329c0628ad419321bb4132b0b21, type: 3}
+  so_CropDetailsList: {fileID: 11400000, guid: e69505005f99dad4cbdecd0f97c7c5ff, type: 2}
 --- !u!225 &897530521
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3326,11 +3327,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f41b2c0e072825449dc2061ecee46c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  so_CropDetailsList: {fileID: 11400000, guid: e69505005f99dad4cbdecd0f97c7c5ff, type: 2}
   so_gridPropertiesArray:
   - {fileID: 11400000, guid: a9bd0ca7833d8bc4191a8808f6228c4f, type: 2}
   - {fileID: 11400000, guid: 068aca02c2457da4eb63496adf7ceb53, type: 2}
   - {fileID: 11400000, guid: 725f966cfd2aadd4a999ed78977aae87, type: 2}
   dugGround:
+  - {fileID: 11400000, guid: 305ec8e32d06bbb4798b4187eea6ae14, type: 2}
+  - {fileID: 11400000, guid: 172c167a636b238488fb89e6f7179b26, type: 2}
+  - {fileID: 11400000, guid: 525a370e707f2804a887d186ebc275f2, type: 2}
+  - {fileID: 11400000, guid: b12a0c26c2badbb479175b61f9032aba, type: 2}
+  - {fileID: 11400000, guid: e63158659b83f814692f456dc980d3a5, type: 2}
+  - {fileID: 11400000, guid: 09786dcc7f525644b9f8030cad5e0730, type: 2}
+  - {fileID: 11400000, guid: 71e8507fc4dab764788211ebbdbcd936, type: 2}
+  - {fileID: 11400000, guid: 6e985424b111a5046b0735d75955c18b, type: 2}
+  - {fileID: 11400000, guid: 3bb048f8d18a47443beba72798c7a864, type: 2}
+  - {fileID: 11400000, guid: 860f579f593f5084ca04341ed8a4fcf3, type: 2}
+  - {fileID: 11400000, guid: 2849b86dfd0b1f44a9d034af6c6f623d, type: 2}
+  - {fileID: 11400000, guid: bc381c215825ea54690599f1a1b343a7, type: 2}
+  - {fileID: 11400000, guid: 2f92cc443ed00b747982b317028d067e, type: 2}
+  - {fileID: 11400000, guid: b10f4e1e08fd88347a7d782d67df00ea, type: 2}
+  - {fileID: 11400000, guid: ce11aa0122785894ca1f03123f66953e, type: 2}
+  - {fileID: 11400000, guid: 484d6df88e4519c4185201593ac42da3, type: 2}
+  wateredGround:
   - {fileID: 11400000, guid: 305ec8e32d06bbb4798b4187eea6ae14, type: 2}
   - {fileID: 11400000, guid: 172c167a636b238488fb89e6f7179b26, type: 2}
   - {fileID: 11400000, guid: 525a370e707f2804a887d186ebc275f2, type: 2}

@@ -68,7 +68,7 @@ MonoBehaviour:
     itemDescription: ' A Basic Watering Can'
     itemSprite: {fileID: 1627416890, guid: 81d1d10b781b09941bf3e30476663a93, type: 3}
     itemLongDescription: "\u0110\xE2y l\xE0 b\xECnh t\u01B0\u1EDBi n\u01B0\u1EDBc"
-    itemUseGridRadius: 0
+    itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
     canBePickedUp: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
     itemDescription: A Basic Axe
     itemSprite: {fileID: 21300000, guid: 9a21654584b8b744cb372af250414677, type: 3}
     itemLongDescription: "\u0110\xE2y l\xE0 c\xE2y r\xECu"
-    itemUseGridRadius: 0
+    itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
     canBePickedUp: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 21dff3a1eafff6341b045912c8714a70, type: 3}
     itemLongDescription: "\u0110\xE2y l\xE0 gi\u1ECF \u0111\u1EC3 nh\u1EB7t \u0111\u1ED3
       v\u1EADt"
-    itemUseGridRadius: 0
+    itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
     canBePickedUp: 1
